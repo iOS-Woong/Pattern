@@ -16,6 +16,7 @@
 		D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */; };
 		D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */; };
 		D2AF23B22A5DBE3D002E1E13 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23B12A5DBE3D002E1E13 /* Validator.swift */; };
+		D2AF23B42A5DC526002E1E13 /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23B32A5DC526002E1E13 /* PasswordStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		D2AF23B12A5DBE3D002E1E13 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		D2AF23B32A5DC526002E1E13 /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		D2AF23AF2A5DBE1A002E1E13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF23B32A5DC526002E1E13 /* PasswordStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				D2AF239A2A5DAA11002E1E13 /* ViewController.swift in Sources */,
 				D2AF23962A5DAA11002E1E13 /* AppDelegate.swift in Sources */,
 				D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */,
+				D2AF23B42A5DC526002E1E13 /* PasswordStorage.swift in Sources */,
 				D2AF23982A5DAA11002E1E13 /* SceneDelegate.swift in Sources */,
 				D2AF23B22A5DBE3D002E1E13 /* Validator.swift in Sources */,
 				D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */,

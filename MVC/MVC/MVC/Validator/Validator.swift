@@ -12,11 +12,13 @@ enum ValidationType {
 }
 
 protocol Validator {
+    var passwordStorage: Storage { get }
     func validate(text: String?, _ validateObject: ValidationType) -> Bool
 }
 
 // external
 final class SignInValidator: Validator {
+    var passwordStorage: Storage = PasswordStorage(password: "", confirmPassword: "")
     func validate(text: String?, _ type: ValidationType) -> Bool {
         guard let text else { return false }
         
@@ -55,5 +57,4 @@ extension SignInValidator {
         
         return false
     }
-    
 }

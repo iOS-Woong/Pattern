@@ -41,8 +41,8 @@ class ViewController: UIViewController {
             })
         
         viewModel
-            .bindValidateAll(handler: { _ in 
-                print("ValidateAll의 바인딩이 동작함.")
+            .bindValidateAll(handler: { [weak self] in
+                self?.signInButton.isEnabled = $0
             })
     }
     

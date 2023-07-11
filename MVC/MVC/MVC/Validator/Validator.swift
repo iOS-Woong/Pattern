@@ -14,11 +14,16 @@ enum ValidationType {
 protocol Validator {
     var passwordStorage: Storage { get }
     func validate(text: String?, _ validateObject: ValidationType) -> Bool
+    func validateButton() -> Bool
 }
 
 final class SignInValidator: Validator {
     private let idValidLength: Int = 5
     private let pwValidLength: Int = 7
+    private var idValidation: Bool = false
+    private var pwValidation: Bool = false
+    private var confirmPwValidation: Bool = false
+    
     private (set) var passwordStorage: Storage
     
     func validate(text: String?, _ type: ValidationType) -> Bool {
@@ -34,6 +39,10 @@ final class SignInValidator: Validator {
         }
     }
     
+    func validateButton() -> Bool {
+        return idValidation && pwValidation && confirmPwValidation
+    }
+    
     init(passwordStorage: Storage = PasswordStorage()) {
         self.passwordStorage = passwordStorage
     }
@@ -42,17 +51,23 @@ final class SignInValidator: Validator {
 // internal
 extension SignInValidator {
     private func checkIdValidation(_ text: String) -> Bool {
-        return validateLength(text, count: idValidLength)
+        self.idValidation = validateLength(text, count: idValidLength)
+        
+        return idValidation
     }
     
     private func checkPWValidation(_ text: String) -> Bool {
         passwordStorage.password = text
-        return validateLength(text, count: pwValidLength)
+        self.pwValidation = validateLength(text, count: pwValidLength)
+        
+        return pwValidation
     }
     
     private func checkConfirmPWValidation(_ text: String) -> Bool {
         passwordStorage.confirmPassword = text
-        return passwordStorage.isEqualOriginPassword
+        self.confirmPwValidation = passwordStorage.isEqualOriginPassword
+        
+        return confirmPwValidation
     }
     
     private func validateLength(_ text: String, count: Int) -> Bool {

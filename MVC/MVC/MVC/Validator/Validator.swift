@@ -16,9 +16,10 @@ protocol Validator {
     func validate(text: String?, _ validateObject: ValidationType) -> Bool
 }
 
-// external
 final class SignInValidator: Validator {
-    var passwordStorage: Storage
+    private let idValidLength: Int = 5
+    private let pwValidLength: Int = 7
+    private (set) var passwordStorage: Storage
     
     func validate(text: String?, _ type: ValidationType) -> Bool {
         guard let text else { return false }
@@ -41,12 +42,12 @@ final class SignInValidator: Validator {
 // internal
 extension SignInValidator {
     private func checkIdValidation(_ text: String) -> Bool {
-        return validateLength(text, count: 5)
+        return validateLength(text, count: idValidLength)
     }
     
     private func checkPWValidation(_ text: String) -> Bool {
         passwordStorage.password = text
-        return validateLength(text, count: 7)
+        return validateLength(text, count: pwValidLength)
     }
     
     private func checkConfirmPWValidation(_ text: String) -> Bool {

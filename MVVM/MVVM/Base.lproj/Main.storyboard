@@ -24,6 +24,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="idTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="LV5-0e-y2L"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q9z-QK-RYe">
                                         <rect key="frame" x="0.0" y="53" width="373" height="34"/>

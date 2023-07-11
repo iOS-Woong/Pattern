@@ -15,6 +15,7 @@
 		D2AF23CE2A5DD2C8002E1E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AF23CC2A5DD2C8002E1E13 /* LaunchScreen.storyboard */; };
 		D2AF23D72A5DD746002E1E13 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D62A5DD746002E1E13 /* ViewModel.swift */; };
 		D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */; };
+		D2AF23DC2A5DDF65002E1E13 /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D2AF23CF2A5DD2C8002E1E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AF23D62A5DD746002E1E13 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInValidator.swift; sourceTree = "<group>"; };
+		D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */,
+				D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AF23DC2A5DDF65002E1E13 /* PasswordStorage.swift in Sources */,
 				D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */,
 				D2AF23C62A5DD2C6002E1E13 /* ViewController.swift in Sources */,
 				D2AF23C22A5DD2C6002E1E13 /* AppDelegate.swift in Sources */,

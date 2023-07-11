@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     private let viewModel = ViewModel()
     
     @IBOutlet weak var stateImageView: UIImageView!
@@ -19,13 +19,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupBinding()
     }
-
+        
+    private func setupBinding() {
+    }
+    
+    
+    @IBAction func idTextFieldChanged(_ sender: UITextField) {
+    }
+    
+    
     @IBAction func signInButton(_ sender: UIButton) {
         
     }
     
-
 }
-

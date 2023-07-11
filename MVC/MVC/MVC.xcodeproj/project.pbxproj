@@ -14,6 +14,7 @@
 		D2AF239F2A5DAA14002E1E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AF239E2A5DAA14002E1E13 /* Assets.xcassets */; };
 		D2AF23A22A5DAA14002E1E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AF23A02A5DAA14002E1E13 /* LaunchScreen.storyboard */; };
 		D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */; };
+		D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D2AF23A12A5DAA14002E1E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2AF23A32A5DAA14002E1E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */,
+				D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				D2AF239A2A5DAA11002E1E13 /* ViewController.swift in Sources */,
 				D2AF23962A5DAA11002E1E13 /* AppDelegate.swift in Sources */,
+				D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */,
 				D2AF23982A5DAA11002E1E13 /* SceneDelegate.swift in Sources */,
 				D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */,
 			);

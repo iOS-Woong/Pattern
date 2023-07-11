@@ -70,9 +70,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmPwTextField" destination="Yyv-2K-1gN" id="Wjf-Kv-WyE"/>
-                        <outlet property="idTextField" destination="ogi-ze-7yd" id="Kon-GW-wln"/>
-                        <outlet property="pwTextField" destination="Yyv-2K-1gN" id="sjr-BE-zZF"/>
+                        <outlet property="confirmPwTextField" destination="Yyv-2K-1gN" id="4nh-Cz-lis"/>
+                        <outlet property="idTextField" destination="ogi-ze-7yd" id="xCF-we-lyi"/>
+                        <outlet property="pwTextField" destination="HnV-WX-R7v" id="PYY-fV-Vg3"/>
                         <outlet property="signInButton" destination="5ag-0c-gJI" id="Atc-Ao-rLv"/>
                         <outlet property="stateImageView" destination="vF0-f3-Fef" id="G2C-cs-mE4"/>
                     </connections>

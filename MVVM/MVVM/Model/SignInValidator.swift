@@ -33,7 +33,7 @@ final class SignInValidator: Validator {
     }
     
     func validateAll() -> Bool {
-        return true
+        return isIDValidated && isPasswordValidated && isConfirmPasswordValidated
     }
     
     func validate(_ text: String?, type: ValidationType) -> ValidationState {

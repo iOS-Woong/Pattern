@@ -61,3 +61,18 @@ extension ViewModel {
     }
 }
 
+// value changed
+extension ViewModel {
+    func textFieldDidChanged(_ text: String?, type: ValidationType) {
+        switch type {
+        case .id:
+            id = validator.validate(text, type: .id)
+        case .password:
+            password = validator.validate(text, type: .password)
+        case .confirmPassword:
+            confirm = validator.validate(text, type: .confirmPassword)
+        }
+        
+        validateAll = validator.validateAll()
+    }
+}

@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signInButton(_ sender: UIButton) {
-        
+        showTestAlert()
     }
 }
 
@@ -118,5 +118,16 @@ extension ViewController {
             static let cornerRadius: CGFloat = 5
             static let borderWidth: CGFloat = 1
         }
+    }
+}
+
+// For Test
+extension ViewController {
+    func showTestAlert() {
+        let alertController = UIAlertController(title: "됨요로그인", message: "네", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "네", style: .cancel)
+        alertController.addAction(okAction)
+        
+        self.present(alertController, animated: true)
     }
 }

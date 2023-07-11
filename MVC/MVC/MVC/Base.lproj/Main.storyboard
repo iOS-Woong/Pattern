@@ -40,16 +40,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="editChangedIDTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="bOR-YX-Not"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-WX-R7v">
                                         <rect key="frame" x="0.0" y="53" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="editChangedPWTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="Wcm-wA-Uos"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-2K-1gN">
                                         <rect key="frame" x="0.0" y="106" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="editChagnedConfirmPWTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="UOd-wa-Lz7"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>

@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let validator = SignInValidator()
+    
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
@@ -17,14 +19,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDefaultButtonAppearance()
-        setupSubviews()
+        setupSubviewsAppearance()
     }
     
     private func setupDefaultButtonAppearance() {
         signInButton.setBackgroundColor(state: .disabled)
     }
     
-    private func setupSubviews() {
+    private func setupSubviewsAppearance() {
         setupTextFieldAppearance([idTextField, pwTextField, confirmPwTextField])
         setupTextFieldSecureContentType([pwTextField, confirmPwTextField])
     }
@@ -45,6 +47,20 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func editChangedIDTextField(_ sender: UITextField) {
+        validator.validate(text: sender.text, .id)
+    }
+    
+    @IBAction func editChangedPWTextField(_ sender: UITextField) {
+        validator.validate(text: sender.text, .password)
+    }
+    
+    @IBAction func editChagnedConfirmPWTextField(_ sender: UITextField) {
+        validator.validate(text: sender.text, .confirm)
+    }
+    
+    
+    
     @IBAction func signInAction(_ sender: UIButton) {
         
     }

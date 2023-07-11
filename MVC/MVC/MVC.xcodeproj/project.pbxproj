@@ -15,6 +15,7 @@
 		D2AF23A22A5DAA14002E1E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AF23A02A5DAA14002E1E13 /* LaunchScreen.storyboard */; };
 		D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */; };
 		D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */; };
+		D2AF23B22A5DBE3D002E1E13 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23B12A5DBE3D002E1E13 /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D2AF23A32A5DAA14002E1E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AF23AB2A5DB1D8002E1E13 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		D2AF23B12A5DBE3D002E1E13 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 		D2AF23942A5DAA11002E1E13 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF23B02A5DBE30002E1E13 /* Validator */,
+				D2AF23AF2A5DBE1A002E1E13 /* Model */,
 				D2AF23A92A5DB1BC002E1E13 /* Utils */,
 				D2AF23952A5DAA11002E1E13 /* AppDelegate.swift */,
 				D2AF23972A5DAA11002E1E13 /* SceneDelegate.swift */,
@@ -87,6 +91,21 @@
 				D2AF23AD2A5DB872002E1E13 /* UIColor+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D2AF23AF2A5DBE1A002E1E13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2AF23B02A5DBE30002E1E13 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF23B12A5DBE3D002E1E13 /* Validator.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +183,7 @@
 				D2AF23962A5DAA11002E1E13 /* AppDelegate.swift in Sources */,
 				D2AF23AE2A5DB872002E1E13 /* UIColor+Ext.swift in Sources */,
 				D2AF23982A5DAA11002E1E13 /* SceneDelegate.swift in Sources */,
+				D2AF23B22A5DBE3D002E1E13 /* Validator.swift in Sources */,
 				D2AF23AC2A5DB1D8002E1E13 /* UIButton+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

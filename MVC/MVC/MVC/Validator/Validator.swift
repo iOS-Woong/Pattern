@@ -18,7 +18,8 @@ protocol Validator {
 
 // external
 final class SignInValidator: Validator {
-    var passwordStorage: Storage = PasswordStorage(password: "", confirmPassword: "")
+    var passwordStorage: Storage
+    
     func validate(text: String?, _ type: ValidationType) -> Bool {
         guard let text else { return false }
         
@@ -28,33 +29,32 @@ final class SignInValidator: Validator {
         case .password:
             return checkPWValidation(text)
         case .confirm:
-            print("confirm Valid")
+            return checkConfirmPWValidation(text)
         }
-        
-        return true
+    }
+    
+    init(passwordStorage: Storage = PasswordStorage()) {
+        self.passwordStorage = passwordStorage
     }
 }
 
 // internal
 extension SignInValidator {
     private func checkIdValidation(_ text: String) -> Bool {
-        if text.count > 5 {
-            return true
-        }
-        return false
+        return validateLength(text, count: 5)
     }
     
     private func checkPWValidation(_ text: String) -> Bool {
-        if text.count > 7 {
-            return true
-        }
-        return false
+        passwordStorage.password = text
+        return validateLength(text, count: 7)
     }
     
     private func checkConfirmPWValidation(_ text: String) -> Bool {
-        
-        
-        
-        return false
+        passwordStorage.confirmPassword = text
+        return passwordStorage.isEqualOriginPassword
+    }
+    
+    private func validateLength(_ text: String, count: Int) -> Bool {
+        return text.count > count
     }
 }

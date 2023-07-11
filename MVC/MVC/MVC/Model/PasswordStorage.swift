@@ -8,14 +8,14 @@
 import Foundation
 
 protocol Storage {
-    var password: String { get set }
-    var confirmPassword: String { get set }
+    var password: String? { get set }
+    var confirmPassword: String? { get set }
     var isEqualOriginPassword: Bool { get }
 }
 
 struct PasswordStorage: Storage {
-    var password: String
-    var confirmPassword: String
+    var password: String?
+    var confirmPassword: String?
     var isEqualOriginPassword: Bool {
         return password == confirmPassword
     }

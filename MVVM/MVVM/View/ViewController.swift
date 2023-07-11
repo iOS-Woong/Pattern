@@ -20,9 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBinding()
+        setUpSubviewsAppearance()
     }
-    
-    
     
     private func setupBinding() {
         viewModel
@@ -33,13 +32,11 @@ class ViewController: UIViewController {
         
         viewModel
             .bindPassword(handler: { [weak self] in
-                print("passwordValidation:", $0)
                 self?.pwTextField.layer.borderColor = self?.appropriatedColor(with: $0)
         })
         
         viewModel
             .bindConfirm(handler: { [weak self] in
-                print("confirmValidation:", $0)
                 self?.confirmPwTextField.layer.borderColor = self?.appropriatedColor(with: $0)
             })
         
@@ -62,6 +59,31 @@ class ViewController: UIViewController {
         }
     }
     
+    private func setUpSubviewsAppearance() {
+        setUpSignUpButtonAppearance()
+        setUpTextFieldsAppearance()
+    }
+    
+    private func setUpSignUpButtonAppearance() {
+        signInButton.clipsToBounds = true
+        signInButton.layer.cornerRadius = Style.SignUpButton.cornerRadius
+        signInButton.setBackgroundColor(.systemGray, for: .disabled)
+        signInButton.isEnabled = false
+    }
+    
+    private func setUpTextFieldsAppearance() {
+        setUpTextFieldAppearance(idTextField)
+        setUpTextFieldAppearance(pwTextField)
+        setUpTextFieldAppearance(confirmPwTextField)
+    }
+    
+    private func setUpTextFieldAppearance(_ textField: UITextField?) {
+        textField?.layer.borderColor = Style.TextField.BorderColor.empty
+        textField?.layer.borderWidth = Style.TextField.borderWidth
+        textField?.layer.cornerRadius = Style.TextField.cornerRadius
+        textField?.textContentType = .oneTimeCode
+    }
+    
     @IBAction func idTextFieldChanged(_ sender: UITextField) {
         viewModel.textFieldDidChanged(sender.text, type: .id)
     }
@@ -77,9 +99,7 @@ class ViewController: UIViewController {
     @IBAction func signInButton(_ sender: UIButton) {
         
     }
-    
 }
-
 
 // MARK: - Style
 extension ViewController {

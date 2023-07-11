@@ -16,6 +16,7 @@
 		D2AF23D72A5DD746002E1E13 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D62A5DD746002E1E13 /* ViewModel.swift */; };
 		D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */; };
 		D2AF23DC2A5DDF65002E1E13 /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */; };
+		D2AF23DF2A5DF275002E1E13 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23DE2A5DF275002E1E13 /* UIButton+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D2AF23D62A5DD746002E1E13 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInValidator.swift; sourceTree = "<group>"; };
 		D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
+		D2AF23DE2A5DF275002E1E13 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		D2AF23C02A5DD2C6002E1E13 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF23DD2A5DF25E002E1E13 /* Utils */,
 				D2AF23D82A5DD8A7002E1E13 /* Model */,
 				D2AF23D52A5DD733002E1E13 /* View */,
 				D2AF23C12A5DD2C6002E1E13 /* AppDelegate.swift */,
@@ -90,6 +93,14 @@
 				D2AF23DB2A5DDF65002E1E13 /* PasswordStorage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D2AF23DD2A5DF25E002E1E13 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF23DE2A5DF275002E1E13 /* UIButton+Ext.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			files = (
 				D2AF23DC2A5DDF65002E1E13 /* PasswordStorage.swift in Sources */,
 				D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */,
+				D2AF23DF2A5DF275002E1E13 /* UIButton+Ext.swift in Sources */,
 				D2AF23C62A5DD2C6002E1E13 /* ViewController.swift in Sources */,
 				D2AF23C22A5DD2C6002E1E13 /* AppDelegate.swift in Sources */,
 				D2AF23D72A5DD746002E1E13 /* ViewModel.swift in Sources */,

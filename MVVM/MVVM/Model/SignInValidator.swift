@@ -64,12 +64,14 @@ extension SignInValidator {
     }
     
     private func validatePassword(_ pw: String) -> ValidationState {
+        passwordStorage.password = pw
         isPasswordValidated = validateLength(pw, count: 7)
         
         return isPasswordValidated ? .valid : .invalid
     }
     
-    private func validateConfirmPassword(_ text: String) -> ValidationState {
+    private func validateConfirmPassword(_ confirm: String) -> ValidationState {
+        passwordStorage.confirmPassword = confirm
         isConfirmPasswordValidated = passwordStorage.isEqualOriginPassword
         
         return isConfirmPasswordValidated ? .valid : .invalid

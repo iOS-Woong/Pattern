@@ -8,5 +8,9 @@
 import Foundation
 
 class ViewModel {
+    private let validator: Validator
     
+    init(validator: Validator = SignInValidator()) {
+        self.validator = validator
+    }
 }

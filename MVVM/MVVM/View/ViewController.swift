@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let viewModel = ViewModel()
+    
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!

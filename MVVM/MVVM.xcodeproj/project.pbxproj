@@ -14,6 +14,7 @@
 		D2AF23CB2A5DD2C8002E1E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AF23CA2A5DD2C8002E1E13 /* Assets.xcassets */; };
 		D2AF23CE2A5DD2C8002E1E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AF23CC2A5DD2C8002E1E13 /* LaunchScreen.storyboard */; };
 		D2AF23D72A5DD746002E1E13 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D62A5DD746002E1E13 /* ViewModel.swift */; };
+		D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D2AF23CD2A5DD2C8002E1E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2AF23CF2A5DD2C8002E1E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AF23D62A5DD746002E1E13 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		D2AF23C02A5DD2C6002E1E13 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF23D82A5DD8A7002E1E13 /* Model */,
 				D2AF23D52A5DD733002E1E13 /* View */,
 				D2AF23C12A5DD2C6002E1E13 /* AppDelegate.swift */,
 				D2AF23C32A5DD2C6002E1E13 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				D2AF23D62A5DD746002E1E13 /* ViewModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D2AF23D82A5DD8A7002E1E13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF23D92A5DD8B6002E1E13 /* SignInValidator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AF23DA2A5DD8B6002E1E13 /* SignInValidator.swift in Sources */,
 				D2AF23C62A5DD2C6002E1E13 /* ViewController.swift in Sources */,
 				D2AF23C22A5DD2C6002E1E13 /* AppDelegate.swift in Sources */,
 				D2AF23D72A5DD746002E1E13 /* ViewModel.swift in Sources */,

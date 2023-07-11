@@ -49,6 +49,9 @@
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="텍스트를 확인해주세요"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vL5-Me-heg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +68,13 @@
                             <constraint firstItem="Ppz-Hl-C0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wDj-Im-t31"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPwTextField" destination="27W-oa-yNS" id="VaX-mx-ohW"/>
+                        <outlet property="idTextField" destination="xho-NZ-X04" id="3Hu-VE-T86"/>
+                        <outlet property="pwTextField" destination="Q9z-QK-RYe" id="c61-J4-Zim"/>
+                        <outlet property="signInButton" destination="Iws-17-NAm" id="acB-AU-atJ"/>
+                        <outlet property="stateImageView" destination="bFT-MK-nDP" id="1Vg-g0-3QS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

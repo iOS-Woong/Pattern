@@ -16,11 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    @IBAction func signInAction(_ sender: Any) {
-        
+        setupDefaultButtonAppearance()
     }
     
-}
+    private func setupDefaultButtonAppearance() {
+        signInButton.setBackgroundColor(state: .disabled)
+    }
 
+    @IBAction func signInAction(_ sender: UIButton) {
+        
+    }
+}

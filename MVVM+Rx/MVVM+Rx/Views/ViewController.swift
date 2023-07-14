@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let viewModel = ViewModel()
+    
     @IBOutlet weak var stateImageView: UIImageView!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
@@ -20,7 +22,15 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func idTextFieldDidChanged(_ sender: UITextField) {
+        viewModel.textFieldDidChanged(sender.text, type: .id)
+    }
     
-
+    @IBAction func pwTextFieldDidChanged(_ sender: UITextField) {
+        viewModel.textFieldDidChanged(sender.text, type: .pw)
+    }
+    
+    @IBAction func confirmTextFieldDidChanged(_ sender: UITextField) {
+        viewModel.textFieldDidChanged(sender.text, type: .confirm)
+    }
 }
-

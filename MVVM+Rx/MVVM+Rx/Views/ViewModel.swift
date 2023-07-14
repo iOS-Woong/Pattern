@@ -10,3 +10,9 @@ import Foundation
 class ViewModel {
     
 }
+
+extension ViewModel {
+    func textFieldDidChanged(_ text: String?, type: ValidationType) {
+        
+    }
+}

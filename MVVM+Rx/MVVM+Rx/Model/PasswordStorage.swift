@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+protocol Storage {
+    var password: String? { get set }
+    var confirm: String? { get set }
+    var isEqualOriginPassword: Bool { get }
+}
+
+struct PasswordStorage: Storage {
+    var password: String?
+    var confirm: String?
+    var isEqualOriginPassword: Bool {
+        password == confirm
+    }
+}

@@ -16,6 +16,7 @@
 		D2AF24022A611DAE002E1E13 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF24012A611DAE002E1E13 /* ViewModel.swift */; };
 		D2AF24052A611E34002E1E13 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF24042A611E34002E1E13 /* Validator.swift */; };
 		D2AF24072A611E5E002E1E13 /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF24062A611E5E002E1E13 /* PasswordStorage.swift */; };
+		D2AF240A2A6130E3002E1E13 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF24092A6130E3002E1E13 /* UIButton+Ext.swift */; };
 		F12D5DD892287FBCFD8E0CA3 /* Pods_MVVM_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABB454B51AFDFBDADC3D7B9 /* Pods_MVVM_Rx.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		D2AF24012A611DAE002E1E13 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D2AF24042A611E34002E1E13 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		D2AF24062A611E5E002E1E13 /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
+		D2AF24092A6130E3002E1E13 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		EABB454B51AFDFBDADC3D7B9 /* Pods_MVVM_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B8E63E952139E600BEBD92 /* Pods-MVVM+Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM+Rx.debug.xcconfig"; path = "Target Support Files/Pods-MVVM+Rx/Pods-MVVM+Rx.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 		D2AF23EB2A611B57002E1E13 /* MVVM+Rx */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF24082A6130D0002E1E13 /* Utils */,
 				D2AF24032A611E2C002E1E13 /* Model */,
 				D2AF24002A611D9D002E1E13 /* Views */,
 				D2AF23EC2A611B57002E1E13 /* AppDelegate.swift */,
@@ -106,6 +109,14 @@
 				D2AF24062A611E5E002E1E13 /* PasswordStorage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D2AF24082A6130D0002E1E13 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF24092A6130E3002E1E13 /* UIButton+Ext.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E0E059BB4409E82A1FCE7464 /* Frameworks */ = {
@@ -233,6 +244,7 @@
 			files = (
 				D2AF24072A611E5E002E1E13 /* PasswordStorage.swift in Sources */,
 				D2AF23F12A611B57002E1E13 /* ViewController.swift in Sources */,
+				D2AF240A2A6130E3002E1E13 /* UIButton+Ext.swift in Sources */,
 				D2AF23ED2A611B57002E1E13 /* AppDelegate.swift in Sources */,
 				D2AF24052A611E34002E1E13 /* Validator.swift in Sources */,
 				D2AF24022A611DAE002E1E13 /* ViewModel.swift in Sources */,
